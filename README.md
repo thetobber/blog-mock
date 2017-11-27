@@ -1,7 +1,7 @@
 ## Apache
 
 #### Core documentation
-[ttps://httpd.apache.org/docs/2.4/mod/core.html
+https://httpd.apache.org/docs/2.4/mod/core.html
 
 #### Access control
 http://httpd.apache.org/docs/current/howto/access.html
@@ -25,7 +25,7 @@ http://httpd.apache.org/docs/current/howto/access.html
         RewriteEngine On
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteCond %{REQUEST_FILENAME} !-d
-        RewriteRule ^(.*)$ /index.php?src=$1 [L,QSA]
+        RewriteRule ^(.*)$ /index.php?q=$1 [L,QSA]
     </Location>
 
     <Location "/Static">

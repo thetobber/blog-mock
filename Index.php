@@ -1,6 +1,2 @@
 <?php
-//a
-?>
-sdaf
-
-asdf
+require __DIR__.'/Application/_Main.php';

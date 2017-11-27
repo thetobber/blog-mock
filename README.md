@@ -1,17 +1,13 @@
-# BlogMock
-
 ## Apache
 
-### References
-
 #### Core documentation
-[https://httpd.apache.org/docs/2.4/mod/core.html]
+[ttps://httpd.apache.org/docs/2.4/mod/core.html
 
 #### Access control
-[http://httpd.apache.org/docs/current/howto/access.html]
+http://httpd.apache.org/docs/current/howto/access.html
 
-### Configuration
-```conf
+#### Configuration
+```
 <VirtualHost *:80>
     ServerAdmin Tobias
     ServerName blogmock.local

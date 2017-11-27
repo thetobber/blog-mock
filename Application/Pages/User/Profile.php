@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/Static/Style.css">
-    <title>Home</title>
+    <title>Update</title>
 </head>
 
 <body>
-    <h1>Index</h1>
+    <?php var_dump($result, $params) ?>
 </body>
 
 </html>

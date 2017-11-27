@@ -1,6 +1,8 @@
 <?php
 namespace Application;
 
+use PDO;
+
 /**
  * Represents a container for a singleton connection to the database.
  */
@@ -31,9 +33,10 @@ class Database
         if (self::$instance === null) {
             try {
                 self::$instance = new PDO(
-                    'mysql:host=localhost;dbname=blockmock;charset=utf8',
-                    'blockmock',
-                    'nhQrQQzf7C6mTybsm47Hy4ae'
+                    'mysql:host=localhost;dbname=blogmock;charset=utf8',
+                    'blogmock_app',
+                    'PQXQ25sSUNKy83H4',
+                    [PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone = 'Europe/Copenhagen'"]
                 );
             }
             catch (PDOException $exception) {
@@ -42,6 +45,6 @@ class Database
             }
         }
 
-        return self::$pdo;
+        return self::$instance;
     }
 }

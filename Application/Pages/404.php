@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/Static/Style.css">
-    <title>Home</title>
+    <title>404 - Not Found</title>
 </head>
 
 <body>
-    <h1>Index</h1>
+    <h1>404 - Not Found</h1>
 </body>
 
 </html>

@@ -27,4 +27,11 @@ class RoleTable
      * @var int
      */
     const SUBSCRIBER = 3;
+
+    /**
+     * Constructor with a private access modifier to prevent instantiation.
+     */
+    private function __construct()
+    {
+    }
 }

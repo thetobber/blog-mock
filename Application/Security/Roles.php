@@ -1,12 +1,23 @@
 <?php
-namespace Application;
+namespace Application\Security;
 
 /**
  * Represents a collection of constants which reflects the different possible 
  * roles of this application used for authorization of users.
  */
-class RoleTable
+class Roles
 {
+    /**
+     * The role names corresponding to their id.
+     * 
+     * @var string
+     */
+    const NAMES = [
+        1 => 'Administrator',
+        2 => 'Editor',
+        3 => 'Subscriber'
+    ];
+
     /**
      * Represents an administrator.
      * 

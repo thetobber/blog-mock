@@ -36,7 +36,10 @@ class Database
                     'mysql:host=localhost;dbname=blogmock;charset=utf8',
                     'blogmock_app',
                     'PQXQ25sSUNKy83H4',
-                    [PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone = 'Europe/Copenhagen'"]
+                    [
+                        PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone = 'Europe/Copenhagen'",
+                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+                    ]
                 );
             }
             catch (PDOException $exception) {

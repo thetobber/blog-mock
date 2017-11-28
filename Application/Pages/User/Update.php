@@ -1,32 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<form action="/User/Update/<?php _e($model->id) ?>" method="POST" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="id" value="<?php _e($model->id) ?>">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Static/Style.css">
-    <title>Update</title>
-</head>
+    <label for="email">
+        <span>E-mail</span>
+        <span class="danger">
+            <?php _b($errors['email']) ? _e($errors['email']) : '' ?>
+        </span>
+    </label>
+    <input id="email" type="text" name="email" value="<?php _e($model->email) ?>">
 
-<body>
-<?php var_dump($path, $query, $params) ?>
+    <label for="old_password">
+        <span>Old password</span>
+        <span class="danger">
+            <?php _b($errors['old_password']) ? _e($errors['old_password']) : '' ?>
+        </span>
+    </label>
+    <input id="old_password" type="password" name="old_password">
 
-    <form action="/" method="POST">
-        <label for="username">Username</label>
-        <input id="username" type="text" name="username">
+    <label for="password">
+        <span>New password</span>
+        <span class="danger">
+            <?php _b($errors['password']) ? _e($errors['password']) : '' ?>
+        </span>
+    </label>
+    <input id="password" type="password" name="password">
 
-        <label for="email">E-mail</label>
-        <input id="email" type="text" name="email">
+    <label for="confirm">
+        <span>Confirm new password</span>
+        <span class="danger">
+            <?php _b($errors['confirm']) ? _e($errors['confirm']) : '' ?>
+        </span>
+    </label>
+    <input id="confirm" type="password" name="confirm">
 
-        <label for="password">Password</label>
-        <input id="password" type="password" name="password">
-
-        <label for="confirm_password">Confirm password</label>
-        <input id="confirm_password" type="password" name="confirm_password">
-
-        <button type="submit">Create user</button>
-    </form>
-</body>
-
-</html>
+    <button type="submit">Update account</button>
+</form>

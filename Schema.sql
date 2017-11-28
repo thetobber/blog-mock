@@ -89,6 +89,15 @@ BEGIN
     SELECT * FROM `user` WHERE `id` = inId;
 END//
 
+-- Read user by username procedure
+CREATE DEFINER = 'blogmock'@'localhost' PROCEDURE readUserByName
+(
+    IN inUsername     VARCHAR(191)
+)
+BEGIN
+    SELECT * FROM `user` WHERE `username` = inUsername;
+END//
+
 -- Update user procedure
 CREATE DEFINER = 'blogmock'@'localhost' PROCEDURE updateUser
 (

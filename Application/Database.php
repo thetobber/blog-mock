@@ -33,9 +33,9 @@ class Database
         if (self::$instance === null) {
             try {
                 self::$instance = new PDO(
-                    'mysql:host=localhost;dbname=blogmock;charset=utf8',
-                    'blogmock_app',
-                    'PQXQ25sSUNKy83H4',
+                    'mysql:host=localhost;dbname=;charset=utf8',
+                    '',
+                    '',
                     [
                         PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone = 'Europe/Copenhagen'",
                         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
